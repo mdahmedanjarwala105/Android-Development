@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".RegistrationActivity">
+
+    <EditText
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:padding="7dp"
+        android:hint="@string/enter_Your_Name"
+        android:inputType="text"
+        android:textColor="@color/orange"
+        android:autofillHints="Hello"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:id="@+id/et_email1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:background="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="7dp"
+        android:hint="@string/email1"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/orange"
+        android:autofillHints="something@gmail.com"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:id="@+id/et_mobile_number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email1"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:padding="7dp"
+        android:hint="@string/mobile_number1"
+        android:inputType="phone"
+        android:textColor="@color/orange"
+        android:autofillHints="1234567890"
+        android:drawableStart="@drawable/baseline_phone_iphone_24"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:id="@+id/et_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_mobile_number2"
+        android:background="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="7dp"
+        android:hint="@string/deliver_address"
+        android:inputType="text"
+        android:textColor="@color/orange"
+        android:autofillHints="Mumbai, Maharashtra"
+        android:drawableStart="@drawable/baseline_location_on_24"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:id="@+id/et_password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_delivery"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:padding="7dp"
+        android:hint="@string/password1"
+        android:inputType="textPassword"
+        android:textColor="@color/orange"
+        android:autofillHints="password1"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:id="@+id/et_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password1"
+        android:background="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="7dp"
+        android:hint="@string/password2"
+        android:inputType="textPassword"
+        android:textColor="@color/orange"
+        android:autofillHints="confirm password"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="5dp"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password2"
+        android:background="@color/purple"
+        android:padding="10dp"
+        android:layout_margin="35dp"
+        android:text="@string/register"
+        android:textColor="@color/orange"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

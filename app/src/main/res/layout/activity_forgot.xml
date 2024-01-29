@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".ForgotActivity">
+
+    <ImageView
+        android:id="@+id/img_logo3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo" />
+
+    <TextView
+        android:id="@+id/txt_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/write"
+        android:textColor="@color/purple"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/img_logo3"
+        android:textSize="18sp"
+        android:layout_margin="12dp"
+        android:paddingTop="9dp"/>
+
+    <EditText
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:id="@+id/et_mobile_number3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_write"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:padding="7dp"
+        android:hint="@string/mobile_number1"
+        android:inputType="phone"
+        android:textColor="@color/orange"
+        android:autofillHints="1234567890"/>
+
+    <EditText
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:id="@+id/et_email2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_mobile_number3"
+        android:background="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="7dp"
+        android:hint="@string/email1"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/orange"
+        android:autofillHints="something@gmail.com"/>
+
+    <Button
+        android:id="@+id/btn_register1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email2"
+        android:background="@color/purple"
+        android:padding="10dp"
+        android:layout_margin="35dp"
+        android:text="@string/register"
+        android:textColor="@color/orange"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

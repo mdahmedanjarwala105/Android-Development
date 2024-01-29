@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".RegisterWelcomeActivity">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="@string/name"
+        android:textSize="18sp"
+        android:paddingVertical="5dp"/>
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="@string/email2"
+        android:textSize="18sp"
+        android:paddingVertical="5dp"/>
+
+    <TextView
+        android:id="@+id/txt_mobileNumber3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_email"
+        android:layout_margin="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="@string/credentials_Mobile_Number"
+        android:textSize="18sp"
+        android:paddingVertical="5dp"/>
+
+    <TextView
+        android:id="@+id/txt_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_mobileNumber3"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="@string/delivery"
+        android:textSize="18sp"
+        android:paddingVertical="5dp"/>
+
+    <TextView
+        android:id="@+id/txt_password3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_delivery"
+        android:layout_margin="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="@string/password3"
+        android:textSize="18sp"
+        android:paddingVertical="5dp"/>
+
+
+</RelativeLayout>
