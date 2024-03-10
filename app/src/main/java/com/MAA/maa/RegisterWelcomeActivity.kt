@@ -6,11 +6,11 @@ import android.widget.TextView
 
 class RegisterWelcomeActivity : AppCompatActivity() {
 
-    lateinit var txt_name:TextView
-    lateinit var txt_email:TextView
-    lateinit var txt_mobileNumber3:TextView
-    lateinit var txt__delivery:TextView
-    lateinit var txt_password3:TextView
+    private lateinit var txt_name:TextView
+    private lateinit var txt_email:TextView
+    private lateinit var txt_mobileNumber3:TextView
+    private lateinit var txt__delivery:TextView
+    private lateinit var txt_password3:TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

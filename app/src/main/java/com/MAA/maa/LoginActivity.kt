@@ -12,15 +12,15 @@ import android.widget.Toast
 
 class LoginActivity : AppCompatActivity() {
 
-    lateinit var et_mobile_number1 : EditText
-    lateinit var et_password : EditText
-    lateinit var btn_login : Button
-    lateinit var txt_forgotPass : TextView
-    lateinit var txt_dont_have_account : TextView
-    lateinit var sharedPreferences: SharedPreferences
+    private lateinit var et_mobile_number1 : EditText
+    private lateinit var et_password : EditText
+    private lateinit var btn_login : Button
+    private lateinit var txt_forgotPass : TextView
+    private lateinit var txt_dont_have_account : TextView
+    private lateinit var sharedPreferences: SharedPreferences
 
-    var validMobileNumber = "1234567890"
-    var validPassword = "hellohi"
+    private var validMobileNumber = "1234567890"
+    private var validPassword = "hellohi"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

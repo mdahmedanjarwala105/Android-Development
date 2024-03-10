@@ -5,13 +5,12 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import org.w3c.dom.Text
 
 class WelcomeActivity : AppCompatActivity() {
 
-    lateinit var txt_credMobileNumber : TextView
-    lateinit var txt_credPassword : TextView
-    lateinit var sharedPreferences: SharedPreferences
+    private lateinit var txt_credMobileNumber : TextView
+    private lateinit var txt_credPassword : TextView
+    private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

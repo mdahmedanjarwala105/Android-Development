@@ -1,6 +1,5 @@
 package com.MAA.maa
 
-import android.app.StatusBarManager
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,13 +9,13 @@ import android.widget.Toast
 
 class RegistrationActivity : AppCompatActivity() {
 
-    lateinit var et_name:EditText
-    lateinit var et_email1:EditText
-    lateinit var et_mobile_number2:EditText
-    lateinit var et_delivery:EditText
-    lateinit var et_password1:EditText
-    lateinit var et_password2:EditText
-    lateinit var btn_register:Button
+    private lateinit var et_name:EditText
+    private lateinit var et_email1:EditText
+    private lateinit var et_mobile_number2:EditText
+    private lateinit var et_delivery:EditText
+    private lateinit var et_password1:EditText
+    private lateinit var et_password2:EditText
+    private lateinit var btn_register:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
